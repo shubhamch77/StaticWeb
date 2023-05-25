@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Permanent+Marker&family=Piazzolla:ital,wght@1,900&family=Satisfy&family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color:#0097e6;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar li{
+    margin-left: 20px;
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    /* padding: 2rem 0; */
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* MAin Header */
+
+.main_header_left{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 1.5rem;
+}
+.main_header_left h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.main_header_left .textclr{
+    color: var(--main-color);
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.main_header_left button:hover{
+    color: var(--main-color);
+    background-color: var(--main-bg);
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+
+.main_header_right{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+/* * {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: cursive;
+} */
+
+ /* body{
+    background:url('https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1');
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 100vh;
+
+} */
+.date-container{
+    font-weight: 100;
+    margin-left: 50px;
+}
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+ /* main { */
+    /* width: 100%;
+    height: 100vh;
+    /* background-color: #3498db; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */ */ */
+
+.row {
+    display: flex;
+    align-items: center;
+    /* vertically */
+    justify-content: center;
+    /* horizontally */
+    width: 1000px;
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.pera_weather{
+    text-align: center;
+}
+.heading_weather{
+    text-align: center;
+}
+.weather_span{
+    color: var(--main-color);
+}
+#search {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.img_weather{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+/* Error Page Style */
+
+.err img{
+    width: 50rem;
+    height: 20rem;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+/* footter code */
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 2rem;
+    font-size: 1rem;
+
+}
+
+/* responsive code */
+@media(max-weidth:768px) {
+    .main_header_left{
+        height: auto;
+        margin-top: 3rem;
+    }
+}
